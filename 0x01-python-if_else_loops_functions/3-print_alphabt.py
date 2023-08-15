@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-for i in range(26):
-    if chr(letter) != 'e' or chr(letter) != 'q':
-          continue
+for i in range(ord('a'), ord('z') + 1):
+    if chr(i) == 'e' or chr(i) == 'q':
+        continue
     else:
-        print("{}".format(chr(letter)), end="")
+        print("{:s}".format(chr(i)), end="")
